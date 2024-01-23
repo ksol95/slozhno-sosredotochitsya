@@ -111,16 +111,15 @@
   color: var(--accent-text-color);
 }
 
-.header__theme-menu-button:hover{
+.header__theme-menu-button:hover {
   outline: 1px solid var(--accent-color-alpha);
 }
 
-.text-block__text a:focus,
-.header__theme-menu-button:focus{
+.header__theme-menu-button:focus {
   outline: none;
 }
 
-.header__theme-menu-button:focus-visible{
+.header__theme-menu-button:focus-visible {
   border-block-end: 1px solid currentColor;
 }
 
@@ -171,11 +170,15 @@
   text-shadow: 2px 2px 0 var(--shadow, #ff0070);
 }
 
-.text-block__text a:hover{
+.text-block__text a:hover {
   border-block-end: 2px solid currentColor;
 }
 
-.text-block__text a:focus-visible{
+.text-block__text a:focus {
+  outline: none;
+}
+
+.text-block__text a:focus-visible {
   outline: 1px solid currentColor;
 }
 
