@@ -304,9 +304,7 @@
 
   .gallery__grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     gap: 20px;
-    max-block-size: 780px;
   }
 
   .gallery__grid .title {
@@ -372,10 +370,6 @@
     flex-direction: row;
     justify-content: center;
     margin-block-start: 0;
-    margin-block-end: 273px;
   }
 
-  .gallery__grid {
-    max-block-size: 1091px;
-  }
 }
