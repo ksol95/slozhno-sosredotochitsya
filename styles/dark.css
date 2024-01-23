@@ -1,3 +1,4 @@
+/* stylelint-disable rule-empty-line-before */
 /*
   Специально для тёмной темы при наличии класса,
   здесь окажутся стили, которые нужно переопределить принудительно,
@@ -18,4 +19,18 @@
   --accent-text-color: #000028;
   --text-color: #f1b2ce;
   --visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --title-color: #db00ff;
+    --shadow: #ff0070;
+    --header-bg-image: url(../images/cover-image-dark.png);
+    --bg-color: #000028;
+    --accent-color: #ff0070;
+    --accent-color-alpha: rgba(50 49 45 / 0.4);
+    --accent-text-color: #000028;
+    --text-color: #f1b2ce;
+    --visibility: visible;
+  }
 }

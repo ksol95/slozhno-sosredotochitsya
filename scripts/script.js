@@ -45,4 +45,5 @@ function initTheme() {
   }
 }
 
+alert(localStorage.getItem('theme'));
 initTheme();
