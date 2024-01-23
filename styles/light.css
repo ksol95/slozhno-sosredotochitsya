@@ -14,6 +14,7 @@
   --header-bg-image: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
   --accent-color: #ff8dcb;
+  --accent-color-alpha: rgba(50 49 45 / 40%);
   --accent-text-color: #353430;
   --text-color: #353430;
   --visibility: hidden;

@@ -10,6 +10,7 @@
   --header-bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --accent-color: #ff0070;
+  --accent-color-alpha: rgba(50 49 45 / 40%);
   --accent-text-color: #000028;
   --text-color: #f1b2ce;
   --visibility: visible;
