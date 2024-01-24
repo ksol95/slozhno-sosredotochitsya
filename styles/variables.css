@@ -10,8 +10,31 @@
   --header-bg-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --accent-color: #ff0070;
-  --accent-color-alpha: rgba(50 49 45 / 0.4);
+  --accent-color-alpha: rgba(255 0 112 / 0.4);
   --accent-text-color: #000028;
   --text-color: #f1b2ce;
   --visibility: visible;
+  --header-column-size: auto;
+  --header-description-size: auto;
+  --gap: 10px;
+  --min-viewport-block-size: 668px;
+  --main-grid-gap: 50px;
+}
+
+@media (width >= 768px) {
+  :root{
+    --header-column-size: 236px;
+    --header-description-size: 364px;
+    --gap: 20px;
+    --min-viewport-block-size: 984px;
+    --main-grid-gap: 80px;
+  }
+}
+
+@media (width >= 1024px) {
+  :root{
+    --header-column-size: 314px;
+    --header-description-size: 491px;
+    --min-viewport-block-size: 768px;
+  }
 }

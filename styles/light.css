@@ -1,4 +1,5 @@
 /* stylelint-disable rule-empty-line-before */
+
 /*
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,
@@ -11,23 +12,38 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --title-color: #ffc2e6;
-  --shadow: #ff8dcb;
-  --header-bg-image: url(../images/cover-image-light.png);
+  --shadow: #FF8DCB;
+  --header-bg-image: url("../images/cover-image-light.png");
   --bg-color: #fff1f7;
-  --accent-color: #ff8dcb;
+  --accent-color: #FF8DCB;
   --accent-color-alpha: rgba(50 49 45 / 0.4);
   --accent-text-color: #353430;
   --text-color: #353430;
   --visibility: hidden;
 }
 
+.theme_light .header::after,
+.theme_light .footer::after,
+.theme_light .header::before,
+.theme_light .footer::before {
+  border-color: var(--text-color);
+}
+
+.theme_light .header__theme-menu-button {
+  color: var(--accent-text-color);
+}
+
+.theme_light .title {
+  color: var(--accent-text-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --title-color: #ffc2e6;
-    --shadow: #ff8dcb;
-    --header-bg-image: url(../images/cover-image-light.png);
+    --shadow: #FF8DCB;
+    --header-bg-image: url("../images/cover-image-light.png");
     --bg-color: #fff1f7;
-    --accent-color: #ff8dcb;
+    --accent-color: #FF8DCB;
     --accent-color-alpha: rgba(50 49 45 / 0.4);
     --accent-text-color: #353430;
     --text-color: #353430;
