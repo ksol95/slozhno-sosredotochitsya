@@ -119,6 +119,10 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -webkit-transition: outline ease-in-out .3s;
+  -moz-transition: outline ease-in-out .3s;
+  -ms-transition: outline ease-in-out .3s;
+  -o-transition: outline ease-in-out .3s;
   transition: outline ease-in-out .3s;
 }
 
@@ -182,9 +186,11 @@
   color: currentColor;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--shadow, #ff0070);
-  transition: -webkit-border-after ease-in-out .3s;
-  transition: border-block-end ease-in-out .3s;
-  transition: border-block-end ease-in-out .3s, -webkit-border-after ease-in-out .3s;
+  -webkit-transition: border ease-in-out .3s;
+  -moz-transition: border ease-in-out .3s;
+  -ms-transition: border ease-in-out .3s;
+  -o-transition: border ease-in-out .3s;
+  transition: border ease-in-out .3s;
 }
 
 .text-block__text a:hover {
