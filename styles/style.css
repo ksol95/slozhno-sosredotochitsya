@@ -27,7 +27,7 @@
   -ms-flex-align: center;
   align-items: center;
   gap: 10px;
-  color: var(--accent-color);
+  color: var(--accent-bg-color);
   line-height: 1.39;
   text-transform: uppercase;
   inset-inline-end: 19px;
@@ -40,12 +40,16 @@
   border-radius: 100%;
   -webkit-box-shadow: 0 0 4px var(--shadow);
   box-shadow: 0 0 4px var(--shadow);
-  background-color: var(--accent-color);
+  background-color: var(--accent-bg-color);
   inline-size: 9px;
   block-size: 9px;
 }
 
-.header,
+.header {
+  block-size: 100vh;
+  min-block-size: var(--min-viewport-block-size);
+}
+
 .footer {
   block-size: 100vh;
   min-block-size: var(--min-viewport-block-size);
@@ -55,10 +59,10 @@
   content: '';
   position: absolute;
   display: block;
-  -webkit-border-start: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
-  -webkit-border-after: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  -webkit-border-start: 1px solid var(--title-color);
+  border-inline-start: 1px solid var(--title-color);
+  -webkit-border-after: 1px solid var(--title-color);
+  border-block-end: 1px solid var(--title-color);
   block-size: 25px;
   inline-size: 25px;
   inset-block-end: var(--gap);
@@ -69,10 +73,10 @@
   content: '';
   position: absolute;
   display: block;
-  -webkit-border-start: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
-  -webkit-border-after: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  -webkit-border-start: 1px solid var(--title-color);
+  border-inline-start: 1px solid var(--title-color);
+  -webkit-border-after: 1px solid var(--title-color);
+  border-block-end: 1px solid var(--title-color);
   block-size: 25px;
   inline-size: 25px;
   inset-block-end: var(--gap);
@@ -83,10 +87,10 @@
   content: '';
   position: absolute;
   display: block;
-  -webkit-border-end: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
-  -webkit-border-before: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  -webkit-border-end: 1px solid var(--title-color);
+  border-inline-end: 1px solid var(--title-color);
+  -webkit-border-before: 1px solid var(--title-color);
+  border-block-start: 1px solid var(--title-color);
   block-size: 25px;
   inline-size: 25px;
   inset-block-start: var(--gap);
@@ -97,10 +101,10 @@
   content: '';
   position: absolute;
   display: block;
-  -webkit-border-end: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
-  -webkit-border-before: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  -webkit-border-end: 1px solid var(--title-color);
+  border-inline-end: 1px solid var(--title-color);
+  -webkit-border-before: 1px solid var(--title-color);
+  border-block-start: 1px solid var(--title-color);
   block-size: 25px;
   inline-size: 25px;
   inset-block-start: var(--gap);
@@ -127,7 +131,7 @@
 .header__theme-menu-button {
   border: 0;
   padding: 0 13px;
-  color: var(--accent-color);
+  color: var(--title-color);
   line-height: 1.4;
   text-transform: lowercase;
   background-color: transparent;
@@ -156,7 +160,7 @@
 }
 
 .big-title {
-  color: var(--title-color);
+  color: var(--big-title-color);
   font-weight: bold;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.825;
@@ -172,13 +176,13 @@
 }
 
 .title {
-  color: var(--accent-color);
+  color: var(--title-color);
   font-size: 18px;
 }
 
 .title-decor {
-  color: var(--accent-text-color);
-  background-color: var(--accent-color);
+  color: var(--accent-title-color);
+  background-color: var(--accent-bg-color);
 }
 
 .text-light {
