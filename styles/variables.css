@@ -22,7 +22,7 @@
 }
 
 @media (width >= 768px) {
-  :root{
+  :root {
     --header-column-size: 236px;
     --header-description-size: 364px;
     --gap: 20px;
@@ -32,7 +32,7 @@
 }
 
 @media (width >= 1024px) {
-  :root{
+  :root {
     --header-column-size: 314px;
     --header-description-size: 491px;
     --min-viewport-block-size: 768px;
