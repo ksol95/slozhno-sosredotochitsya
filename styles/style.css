@@ -22,8 +22,6 @@
 .rec {
   position: absolute;
   visibility: var(--visibility);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -115,8 +113,6 @@
 }
 
 .header__theme-menu-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -295,15 +291,11 @@
 }
 
 .gallery__grid picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .footer {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
